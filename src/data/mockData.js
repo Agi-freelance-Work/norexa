@@ -85,43 +85,97 @@ export const mockCoupons = {
 };
 
 export const topDeals = [
-    ...mockCoupons.myntra.slice(0, 1),
-    ...mockCoupons.amazon.slice(0, 1),
-    ...mockCoupons.hm.slice(0, 1),
-    ...mockCoupons.ajio.slice(0, 1)
-].map(deal => ({
-    id: deal.id,
-    store: deal.brand,
-    title: deal.title,
-    discount: deal.discount,
-    newPrice: "Shop Now",
-    image: brandLogos[deal.brand],
-    link: deal.link
-}));
+    // Clothing
+    { id: 'deal-c1', store: 'myntra', title: 'Extra 40% OFF on clothing (Code: MYNTRA40)', discount: '40% OFF', image: brandLogos.myntra, link: 'https://www.myntra.com/women', filterCategory: 'Clothing' },
+    { id: 'deal-c2', store: 'amazon', title: 'Up to 60% OFF apparel (Code: FASHION60)', discount: '60% OFF', image: brandLogos.amazon, link: 'https://www.amazon.in/fashion', filterCategory: 'Clothing' },
+    { id: 'deal-c3', store: 'hm', title: 'Buy 2 Get 20% OFF (Code: HM20)', discount: '20% OFF', image: brandLogos.hm, link: 'https://www2.hm.com/en_in/women.html', filterCategory: 'Clothing' },
+    { id: 'deal-c4', store: 'ajio', title: 'Extra 30% OFF fashion (Code: AJIO30)', discount: '30% OFF', image: brandLogos.ajio, link: 'https://www.ajio.com/c/women', filterCategory: 'Clothing' },
+
+    // Footwear
+    { id: 'deal-f1', store: 'myntra', title: 'Myntra Shoes: Up to 50% OFF (Code: SHOES50)', discount: '50% OFF', image: brandLogos.myntra, link: 'https://www.myntra.com/shoes', filterCategory: 'Footwear' },
+    { id: 'deal-f2', store: 'amazon', title: 'Amazon Sneakers: Extra 25% OFF (Code: STEP25)', discount: '25% OFF', image: brandLogos.amazon, link: 'https://www.amazon.in/s?k=shoes+fashion', filterCategory: 'Footwear' },
+    { id: 'deal-f3', store: 'ajio', title: 'Ajio Footwear: Flat 35% OFF (Code: WALK35)', discount: '35% OFF', image: brandLogos.ajio, link: 'https://www.ajio.com/c/footwear', filterCategory: 'Footwear' },
+
+    // Accessories
+    { id: 'deal-a1', store: 'amazon', title: 'Watches: Up to 45% OFF (Code: TIME45)', discount: '45% OFF', image: brandLogos.amazon, link: 'https://www.amazon.in/s?k=watches', filterCategory: 'Accessories' },
+    { id: 'deal-a2', store: 'myntra', title: 'Bags: Extra 30% OFF (Code: BAG30)', discount: '30% OFF', image: brandLogos.myntra, link: 'https://www.myntra.com/accessories', filterCategory: 'Accessories' },
+    { id: 'deal-a3', store: 'hm', title: 'Sunglasses: Flat 20% OFF (Code: SUN20)', discount: '20% OFF', image: brandLogos.hm, link: 'https://www2.hm.com/en_in/women/shop-by-product/accessories.html', filterCategory: 'Accessories' }
+];
 
 export const blogPosts = [
     {
         id: 1,
-        title: "10 Essential Wardrobe Staples Every Man Needs",
-        category: "Style Guide",
-        excerpt: "Building a versatile wardrobe doesn't require a lot of clothes, just the right ones. Here are 10 essentials every man should own.",
-        date: "Oct 12, 2026",
-        image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=400"
+        title: "Best Myntra Deals Today",
+        category: "Sale Guide",
+        excerpt: "Discover the top Myntra discounts actively running today covering ethnic wear, casuals, and premium brands.",
+        image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=600",
+        content: `
+            <p>Myntra is hosting a massive end-of-season sale right now, bringing unbelievable discounts to premium clothing.</p>
+            <p>From casual t-shirts and jeans to highly sought-after ethnic wear and sarees, Myntra's clothing discounts are peaking today with up to 80% off.</p>
+            <p>We highly recommend layering your coupons with instant bank discounts to maximize your final checkout value.</p>
+            <p>Here are some essential tips to save more:</p>
+            <ul style="margin-left:20px;margin-bottom:15px;list-style:disc;">
+                <li>Use bank offers and credit card EMI deals.</li>
+                <li>Check flash sales which happen daily at 12 PM.</li>
+                <li>Apply exclusive coupon codes at checkout.</li>
+            </ul>
+        `,
+        ctaText: "Shop Myntra Deals",
+        ctaLink: "/myntra"
     },
     {
         id: 2,
-        title: "How to Maximize Savings During Festival Sales",
-        category: "Money Saving",
-        excerpt: "Festival sales can be overwhelming. Learn how to combine coupons, card offers, and timing to maximize your savings.",
-        date: "Oct 10, 2026",
-        image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=400"
+        title: "Amazon Fashion Sale Guide",
+        category: "Shopping Hacks",
+        excerpt: "Master the Amazon Great Indian Festival and daily wardrobe refresh deals with these expert strategies.",
+        image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80&w=600",
+        content: `
+            <p>The Amazon Fashion sale gives shoppers unparalleled access to global brands with the added benefit of rapid Prime delivery.</p>
+            <p>We're seeing significant drops in both clothing and footwear deals. Sneakers from brands like Puma and Adidas are hitting 60% off during flash sales.</p>
+            <p>Here are our top Amazon shopping strategies:</p>
+            <ul style="margin-left:20px;margin-bottom:15px;list-style:disc;">
+                <li>Use the 'Subscribe & Save' feature on basics.</li>
+                <li>Leverage Amazon Pay ICICI credit cards for flat 5% cashback.</li>
+                <li>Add items to your wishlist and monitor lightning deals.</li>
+            </ul>
+        `,
+        ctaText: "Shop Amazon Fashion",
+        ctaLink: "/amazon"
     },
     {
         id: 3,
-        title: "Sustainable Fashion Brands You Should Check Out",
-        category: "Eco-Friendly",
-        excerpt: "Looking good shouldn't cost the earth. Discover the top sustainable fashion brands offering stylish, eco-friendly clothing.",
-        date: "Oct 05, 2026",
-        image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=400"
+        title: "H&M Discount Tips",
+        category: "Style Savings",
+        excerpt: "Learn how to consistently save on trending H&M fast-fashion apparel through memberships and eco-initiatives.",
+        image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=600",
+        content: `
+            <p>H&M seasonal sales bring high-end runway trends directly to your shopping cart at incredibly affordable prices.</p>
+            <p>If you're a student, H&M is exceptionally generous. Use your StudentBeans ID to unlock a flat, permanent student discount on all regular-priced merchandise.</p>
+            <p>Don't ignore the accessories deals! Bags, jewelry, and sunglasses are frequently bundled into Buy 2 Get 1 Free promotions.</p>
+            <ul style="margin-left:20px;margin-bottom:15px;list-style:disc;">
+                <li>Recycle old clothes at stores to get a 10% voucher.</li>
+                <li>Sign up for H&M Membership for an instant 10% welcome bonus.</li>
+            </ul>
+        `,
+        ctaText: "Get H&M Coupons",
+        ctaLink: "/hm"
+    },
+    {
+        id: 4,
+        title: "Ajio Sale Shopping Guide",
+        category: "Premium Brands",
+        excerpt: "Unlock heavy discounts on premium international brands using Ajio's high-value multi-tier cart coupons.",
+        image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=600",
+        content: `
+            <p>Shopping on Ajio requires a strategic understanding of their massive, multi-tiered coupon thresholds.</p>
+            <p>Proper Ajio coupon usage means you should bundle your items to hit the ₹2990 cart value, instantly unlocking their flat ₹1000 OFF codes.</p>
+            <p>Look out for combo offers on trending styles. Biba kurtas and Superdry tees are frequently bundled in premium flash deals on the front page.</p>
+            <ul style="margin-left:20px;margin-bottom:15px;list-style:disc;">
+                <li>Always use Reliance SBI cards during checkout.</li>
+                <li>Check the "Ajio Luxe" tab for untouched global inventory markdowns.</li>
+            </ul>
+        `,
+        ctaText: "Shop Ajio Offers",
+        ctaLink: "/ajio"
     }
 ];

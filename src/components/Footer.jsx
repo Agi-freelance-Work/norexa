@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Globe, Mail, MessageCircle, Share2 } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,12 +9,6 @@ const Footer = () => {
                 <div className="footer-brand">
                     <Link to="/" className="logo footer-logo">Norexa</Link>
                     <p className="footer-desc">Your ultimate destination for the best fashion deals, coupons, and discounts across top stores.</p>
-                    <div className="social-links">
-                        <a href="#"><Globe size={20} /></a>
-                        <a href="#"><Mail size={20} /></a>
-                        <a href="#"><MessageCircle size={20} /></a>
-                        <a href="#"><Share2 size={20} /></a>
-                    </div>
                 </div>
 
                 <div className="footer-links">
