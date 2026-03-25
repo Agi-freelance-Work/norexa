@@ -26,11 +26,7 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <div className="header-actions">
-                    <button className="search-btn">
-                        <Search size={22} />
-                    </button>
-                </div>
+
             </div>
         </header>
     );

@@ -9,7 +9,10 @@ import Home from './pages/Home';
 import BrandPage from './pages/BrandPage';
 import TopPicks from './pages/TopPicks';
 import Blogs from './pages/Blogs';
+import BlogPost from './pages/BlogPost';
 import Disclosure from './pages/Disclosure';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
             <Route path="/hm" element={<BrandPage fixedBrand="hm" />} />
             <Route path="/ajio" element={<BrandPage fixedBrand="ajio" />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/affiliate-disclosure" element={<Disclosure />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
           </Routes>
         </main>
         <Footer />
