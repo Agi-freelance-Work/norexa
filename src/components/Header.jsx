@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Search, Globe } from 'lucide-react';
+import norexaLogo from '../assets/norexa-logo.png';
 import './Header.css';
 
 const Header = () => {
@@ -8,9 +8,11 @@ const Header = () => {
         <header className="header">
             <div className="container header-container">
                 <Link to="/" className="logo-section">
-                    <div className="logo-icon">
-                        <Globe size={24} color="white" />
-                    </div>
+                    <img
+                        src={norexaLogo}
+                        alt="Norexa Logo"
+                        style={{ height: '40px', width: 'auto', display: 'block' }}
+                    />
                     <span className="logo-text">Norexa</span>
                 </Link>
 

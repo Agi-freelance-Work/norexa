@@ -108,7 +108,7 @@ export const blogPosts = [
         title: "Best Myntra Coupons & Upcoming Sale Dates (2026)",
         category: "Sale Guide",
         excerpt: "A complete guide to Myntra's biggest upcoming fashion sales, active coupon codes, and bank discount strategies for Indian shoppers.",
-        image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800",
         content: `
             <h2>Understanding Myntra's Discount Ecosystem</h2>
             <p>If you're hunting for the best fashion discounts in India, <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" style="color:#1d4ed8;">Myntra</a> remains the undisputed king of ethnic wear and casual brands. However, finding valid coupons requires knowing exactly when to shop.</p>
@@ -133,7 +133,7 @@ export const blogPosts = [
         title: "Amazon Great Indian Festival: Fashion Hacks",
         category: "Shopping Hacks",
         excerpt: "Stop paying retail on Amazon. Master the Wardrobe Refresh deals, lightning deals, and Prime exclusive fashion coupons.",
-        image: "https://images.unsplash.com/photo-1573445554694-a1a7c5c0c978?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800",
         content: `
             <h2>Cracking the Amazon Fashion Code</h2>
             <p>While <a href="https://www.amazon.in/fashion" target="_blank" rel="noopener noreferrer" style="color:#1d4ed8;">Amazon India</a> is known for electronics, their fashion infrastructure has quietly become one of the most heavily discounted sectors in e-commerce, especially during the <strong>Great Indian Festival</strong>.</p>
@@ -156,7 +156,7 @@ export const blogPosts = [
         title: "How to Get Maximum Discount on H&M India",
         category: "Style Savings",
         excerpt: "The ultimate Indian shopper's guide to saving money on H&M's fast-fashion using student IDs, recycling, and member days.",
-        image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=800",
         content: `
             <h2>Unlocking H&M's Hidden Discounts</h2>
             <p><a href="https://www2.hm.com/en_in/" target="_blank" rel="noopener noreferrer" style="color:#1d4ed8;">H&M India</a> rarely advertises coupon codes strictly on their homepage, making them seem rigid on pricing. However, they actually offer some of the most consistent loyalty discount programs in the country.</p>
@@ -177,7 +177,7 @@ export const blogPosts = [
         title: "Ajio Mania Sale: Reliance Premium Brands Guide",
         category: "Premium Brands",
         excerpt: "Navigate the complex multi-tier coupon systems on Ajio to secure cheap Superdry, GAP, and premium ethnic wear.",
-        image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=800",
         content: `
             <h2>Mastering the Ajio Checkout Cart</h2>
             <p>Backed by Reliance, <a href="https://www.ajio.com" target="_blank" rel="noopener noreferrer" style="color:#1d4ed8;">Ajio</a> has aggressively courted premium international brands (GAP, Superdry, Armani Exchange). They don't typically do flat product discounts; instead, they rely heavily on <strong>Cart Value Coupons</strong>.</p>
@@ -222,7 +222,7 @@ export const blogPosts = [
         title: "Myntra vs Ajio: Which Has Better Clothing Deals?",
         category: "Comparisons",
         excerpt: "A comprehensive breakdown of which Indian fashion giant offers better discounts on ethnic wear, casuals, and international brands.",
-        image: "https://plus.unsplash.com/premium_photo-1673356301535-224a0f16e451?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=800",
         content: `
             <h2>The Battle of Indian Fashion E-Commerce</h2>
             <p>Consumers frequently debate whether they should spend their capital during Myntra's End of Reason Sale or Ajio's Big Bold Sale. After aggregating thousands of coupons natively on Norexa, the data is decisively clear: it depends on <em>what</em> you are buying.</p>
