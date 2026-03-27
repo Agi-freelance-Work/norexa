@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 import './Footer.css';
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-content">
                 <div className="footer-brand">
-                    <Link to="/" className="logo footer-logo">Norexa</Link>
+                    <Logo light={true} />
                     <p className="footer-desc">Your ultimate destination for the best fashion deals, coupons, and discounts across top stores.</p>
                 </div>
 
@@ -27,6 +28,18 @@ const Footer = () => {
                         <li><Link to="/privacy">Privacy Policy</Link></li>
                         <li><Link to="/terms">Terms of Service</Link></li>
                     </ul>
+                </div>
+
+                <div className="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/blogs">Blogs</Link></li>
+                    </ul>
+                    <div className="footer-contact-info" style={{ marginTop: '1rem', borderTop: '1px solid #eee', paddingTop: '1rem' }}>
+                        <a href="mailto:support@norexa.online" style={{ color: '#1d4ed8', fontWeight: 'bold', fontSize: '0.9rem' }}>support@norexa.online</a>
+                    </div>
                 </div>
             </div>
 

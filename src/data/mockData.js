@@ -2,7 +2,8 @@ export const brandLogos = {
     myntra: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png",
     amazon: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
     hm: "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg",
-    ajio: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCAyMDAgNjAiPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iNDIiIGZpbGw9IiMyYzQxNWMiIGxldHRlci1zcGFjaW5nPSIyIj5BSklPPC90ZXh0Pjwvc3ZnPg=="
+    ajio: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCAyMDAgNjAiPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iNDIiIGZpbGw9IiMyYzQxNWMiIGxldHRlci1zcGFjaW5nPSIyIj5BSklPPC90ZXh0Pjwvc3ZnPg==",
+    flipkart: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/flipkart-icon.png"
 };
 
 const generateCoupons = (brand, templates) => {
@@ -15,6 +16,8 @@ const generateCoupons = (brand, templates) => {
 
 export const mockCoupons = {
     myntra: generateCoupons('myntra', [
+        { category: 'Top', type: 'OFF', discount: '₹300', badge: 'NEW USER', title: 'Up To 90% OFF + Extra Rs 300 OFF', description: 'Discount up to 90% OFF + Rs 300 OFF. Applies To Fashion, Footwear, Accessories & more. Order Value Rs 1299 & Above. Valid For New Users.', code: 'MYNTRA300', expiry: 'Ends Soon', verified: true, link: 'https://www.myntra.com/' },
+        { category: 'Top', type: 'OFF', discount: '25% OFF', badge: 'EXCLUSIVE', title: 'Flat 25% OFF On Min Purchase Of Rs 300', description: 'Flat 25% OFF On Minimum Purchase Of Rs 300. Valid for new users.', code: 'MYNTRASAVE', expiry: 'Limited Time', verified: true, link: 'https://www.myntra.com/' },
         { category: 'Top', type: 'OFF', discount: '80%', badge: 'SALE', title: 'Up to 80% OFF on Top Fashion Brands', description: 'Applicable on Puma, Roadster, HRX, and more. No minimum order required.', code: '', expiry: 'Ends Soon', verified: true, link: 'https://www.myntra.com/shop/men' },
         { category: 'Top', type: 'OFF', discount: '₹400', badge: 'EXCLUSIVE', title: 'Flat ₹400 OFF on First Order', description: 'Use this code to get an instant discount on your first fashion purchase above ₹1999.', code: 'MYNTRA400', expiry: 'Valid till month end', verified: true, link: 'https://www.myntra.com/shop/women' },
         { category: 'Top', type: 'CASHBACK', discount: '10%', badge: 'PAYMENT', title: '10% Cashback via ICICI Bank Credit Cards', description: 'Enjoy instant cashback on all apparel with select credit cards.', code: '', expiry: 'Ongoing', verified: true, link: 'https://www.myntra.com/personal-care' },
@@ -48,7 +51,13 @@ export const mockCoupons = {
         { category: 'Latest', type: 'OFF', discount: '₹200', badge: 'MEN', title: 'Flat ₹200 OFF on Levi\'s Jeans', description: 'Upgrade your denim collection. Valid on purchases above ₹2000.', code: 'LEVIS200', expiry: 'Valid till month end', verified: true, link: 'https://www.amazon.in/s?k=men+fashion' },
         { category: 'Trending', type: 'OFF', discount: '75%', badge: 'CLEARANCE', title: 'Stock Clearance: Up to 75% OFF', description: 'Grab the last pieces of top-selling fashion apparel.', code: '', expiry: 'While stocks last', verified: true, link: 'https://www.amazon.in/clearance' },
     ]),
+    flipkart: generateCoupons('flipkart', [
+        { category: 'Top', type: 'OFF', discount: '80% OFF', badge: 'SALE', title: 'Cooling Days - Up to 80% OFF | 10% Bank Offer', description: 'Up to 80% OFF on various categories like Monthly Groceries, Kitchen Staples, Home Care Needs, and Household Essentials. FREE Delivery.', code: '', expiry: 'Limited Time', verified: true, link: 'https://www.flipkart.com/' },
+        { category: 'Top', type: 'OFF', discount: '90% OFF', badge: 'MEGA SALE', title: 'Mega Flipkart Sitewide Sale – Up To 90% OFF', description: 'Mega Flipkart Sitewide Sale – Enjoy Up To 90% OFF On All Categories.', code: '', expiry: 'Ends Soon', verified: true, link: 'https://www.flipkart.com/' },
+    ]),
     hm: generateCoupons('hm', [
+        { category: 'Top', type: 'OFF', discount: '60% OFF', badge: 'DASHING', title: 'Grab H&M Stylish Deals – Up To 60% OFF', description: 'Shop exclusive women\'s styles at affordable prices. Up To 60% OFF on your purchases.', code: '', expiry: 'Limited Time', verified: true, link: 'https://www2.hm.com/en_in/index.html' },
+        { category: 'Top', type: 'FREE', discount: 'FREE', badge: 'SHIPPING', title: 'Get FREE Shipping On All Orders', description: 'Get FREE Shipping On All Orders Of H&M Collections. No minimum order required.', code: '', expiry: 'Ongoing', verified: true, link: 'https://www2.hm.com/en_in/index.html' },
         { category: 'Top', type: 'OFF', discount: '20%', badge: 'MEMBERS', title: '20% OFF on 2 or more items', description: 'Add 2 or more items to cart and get 20% off. Members only.', code: 'HM20', expiry: 'In 2 days', verified: true, link: 'https://www2.hm.com/en_in/women.html' },
         { category: 'Top', type: 'OFF', discount: '15%', badge: 'WELCOME', title: 'Flat 15% OFF for New Members', description: 'Sign up for the H&M loyalty program and get 15% off your first purchase.', code: 'WELCOME15', expiry: 'Ongoing', verified: true, link: 'https://www2.hm.com/en_in/customer-service/shopping-at-hm/hm-member.html' },
         { category: 'Top', type: 'OFF', discount: '50%', badge: 'SALE', title: 'Mid-Season Sale: Up to 50% OFF', description: 'Discounts on selected styles for men, women, and kids.', code: '', expiry: 'Ends Soon', verified: true, link: 'https://www2.hm.com/en_in/sale.html' },
@@ -66,6 +75,8 @@ export const mockCoupons = {
         { category: 'Trending', type: 'OFF', discount: '70%', badge: 'ACCESSORIES', title: 'Up to 70% OFF on Bags & Jewelry', description: 'Complete your look with heavily discounted accessories.', code: '', expiry: 'While stocks last', verified: true, link: 'https://www2.hm.com/en_in/women/shop-by-product/accessories.html' },
     ]),
     ajio: generateCoupons('ajio', [
+        { category: 'Top', type: 'OFF', discount: '30% OFF', badge: 'SALE', title: 'Ajio All Starts Sale: 50-90% OFF + 30% OFF', description: 'All Stars Festive Edition Sale is Live Now! Get 50-90% OFF during India\'s hottest and biggest fashion sale.', code: 'NEW30', expiry: 'Limited Time', verified: true, link: 'https://www.ajio.com/' },
+        { category: 'Top', type: 'OFF', discount: '₹700', badge: 'TRENDS', title: 'Trends Collections - Flat Rs 700 OFF', description: 'Flat Rs 700 OFF On Rs 1000 & Above. Applicable on Trends collection.', code: '', expiry: 'Ends Soon', verified: true, link: 'https://www.ajio.com/' },
         { category: 'Top', type: 'OFF', discount: '₹500', badge: 'TRENDS', title: 'Get ₹500 OFF on Ajio Trends', description: 'Valid on orders above ₹2499. Exclusive handpicked styles.', code: 'TRENDS500', expiry: 'Valid till 30th', verified: true, link: 'https://www.ajio.com/c/women' },
         { category: 'Top', type: 'OFF', discount: '90%', badge: 'MANIA', title: 'Ajio Big Bold Sale: 50-90% OFF', description: 'The absolute biggest sale of the season across all categories.', code: '', expiry: 'Ends Sunday', verified: true, link: 'https://www.ajio.com/s/clearance-sale' },
         { category: 'Top', type: 'OFF', discount: '₹1000', badge: 'LUXURY', title: 'Flat ₹1000 OFF on Ajio Luxe', description: 'Premium international brands like Superdry, Armani Exchange, and GAP.', code: 'LUXE1000', expiry: 'Valid till month end', verified: true, link: 'https://luxe.ajio.com/' },

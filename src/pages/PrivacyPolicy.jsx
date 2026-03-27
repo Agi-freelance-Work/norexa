@@ -15,7 +15,7 @@ const PrivacyPolicy = () => (
             <p style={{ color: '#64748b', lineHeight: '1.6' }}>We use analytical and functional cookies to ensure you get the best experience on our website. Cookies actively help us track the performance of different affiliate links securely and accurately.</p>
 
             <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>Contact Us</h3>
-            <p style={{ color: '#64748b', lineHeight: '1.6' }}>For any privacy-related inquiries, data requests, or partnership questions, please reach out directly via email at: <a href="mailto:norexa@gmail.com" style={{ color: '#1d4ed8', fontWeight: 'bold' }}>norexa@gmail.com</a></p>
+            <p style={{ color: '#64748b', lineHeight: '1.6' }}>For any privacy-related inquiries, data requests, or partnership questions, please reach out directly via email at: <a href="mailto:support@norexa.online" style={{ color: '#1d4ed8', fontWeight: 'bold' }}>support@norexa.online</a></p>
         </div>
     </div>
 );

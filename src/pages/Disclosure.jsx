@@ -24,7 +24,7 @@ const Disclosure = () => {
                         <h3>4. Responsibility</h3>
                         <p>We do not guarantee that the prices, stock, or promotional codes listed on this site will be valid at the time of your purchase. Retailers are solely responsible for the fulfillment of all items purchased through affiliate links.</p>
 
-                        <p>If you have any questions about this disclosure, please contact us at norexa@gmail.com.</p>
+                        <p>If you have any questions about this disclosure, please contact us at support@norexa.online.</p>
                     </div>
                 </div>
             </div>

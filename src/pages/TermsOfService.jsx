@@ -18,7 +18,7 @@ const TermsOfService = () => (
             <p style={{ color: '#64748b', lineHeight: '1.6' }}>Our website contains redirect links to external fashion infrastructures that are not operated by Norexa. We structurally have no control over the content, terms, and data collection practices of these external sites.</p>
 
             <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>Contact Us</h3>
-            <p style={{ color: '#64748b', lineHeight: '1.6' }}>If you have any compliance questions regarding these terms, formally contact us at: <a href="mailto:norexa@gmail.com" style={{ color: '#1d4ed8', fontWeight: 'bold' }}>norexa@gmail.com</a></p>
+            <p style={{ color: '#64748b', lineHeight: '1.6' }}>If you have any compliance questions regarding these terms, formally contact us at: <a href="mailto:support@norexa.online" style={{ color: '#1d4ed8', fontWeight: 'bold' }}>support@norexa.online</a></p>
         </div>
     </div>
 );
