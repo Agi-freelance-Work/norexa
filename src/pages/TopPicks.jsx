@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DealCard from '../components/DealCard';
 import { topDeals } from '../data/mockData';
+import SEOHead from '../components/SEOHead';
 import './TopPicks.css';
 
 const TopPicks = () => {
@@ -15,6 +16,11 @@ const TopPicks = () => {
 
     return (
         <div className="top-picks-page section">
+            <SEOHead
+                title="Today's Top Fashion Picks & Deals | Norexa"
+                description="Hand-curated top fashion deals with massive discounts from Myntra, Amazon, H&M, Ajio, and Flipkart. Updated daily."
+                canonicalPath="/top-picks"
+            />
             <div className="container">
                 <header className="page-header">
                     <h1>Today's Top Picks</h1>

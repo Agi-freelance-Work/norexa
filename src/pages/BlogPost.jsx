@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { blogPosts } from '../data/mockData';
+import SEOHead from '../components/SEOHead';
 
 const BlogPost = () => {
     const { id } = useParams();
@@ -12,6 +13,11 @@ const BlogPost = () => {
 
     return (
         <article className="section auto-container">
+            <SEOHead
+                title={`${post.title} | Norexa Blog`}
+                description={post.content.replace(/<[^>]*>?/gm, '').substring(0, 160) + '...'}
+                canonicalPath={`/blog/${id}`}
+            />
             <div className="container" style={{ maxWidth: '800px', margin: '0 auto', background: 'white', padding: '3rem', borderRadius: '12px' }}>
                 <span style={{ color: 'var(--color-primary)', fontWeight: '700', textTransform: 'uppercase', fontSize: '0.85rem' }}>{post.category}</span>
                 <h1 style={{ marginTop: '0.5rem', marginBottom: '1.5rem', fontSize: '2.5rem', color: 'var(--color-dark)' }}>{post.title}</h1>

@@ -1,7 +1,13 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 
 const PrivacyPolicy = () => (
     <div className="section auto-container">
+        <SEOHead
+            title="Privacy Policy | Norexa"
+            description="Our privacy policy details how Norexa collects, uses, and protects your data while providing the best fashion coupons and deals."
+            canonicalPath="/privacy"
+        />
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', background: 'white', padding: '3rem', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
             <h1 style={{ marginBottom: '2rem' }}>Privacy Policy</h1>
 

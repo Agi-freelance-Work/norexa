@@ -1,0 +1,12 @@
+# Robots.txt for Norexa
+# https://norexa.online
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://norexa.online/sitemap.xml
+
+# Crawl-delay (optional, for well-behaved bots)
+Crawl-delay: 1

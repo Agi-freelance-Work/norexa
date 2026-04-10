@@ -1,7 +1,13 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 
 const TermsOfService = () => (
     <div className="section auto-container">
+        <SEOHead
+            title="Terms of Service | Norexa"
+            description="Read the terms of service that govern your use of the Norexa affiliate platform and coupon aggregation service."
+            canonicalPath="/terms"
+        />
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', background: 'white', padding: '3rem', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
             <h1 style={{ marginBottom: '2rem' }}>Terms of Service</h1>
 

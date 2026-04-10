@@ -1,9 +1,15 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 import './Home.css'; // Reusing some base styles or I could create About.css
 
 const About = () => {
     return (
         <div className="about-page fade-in">
+            <SEOHead
+                title="About Norexa | Our Mission & Story"
+                description="Learn about Norexa — our mission to simplify online fashion shopping by bringing the best deals, verified coupons, and exclusive offers to your fingertips."
+                canonicalPath="/about"
+            />
             <div className="container" style={{ padding: '4rem 0' }}>
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', marginBottom: '4rem' }}>
                     <span style={{ color: '#1d4ed8', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Our Story</span>

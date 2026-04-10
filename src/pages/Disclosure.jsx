@@ -1,9 +1,15 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 import './Disclosure.css';
 
 const Disclosure = () => {
     return (
         <div className="disclosure-page section">
+            <SEOHead
+                title="Affiliate Disclosure | Norexa"
+                description="Our affiliate disclosure explains our relationship with the affiliate networks and merchants we promote."
+                canonicalPath="/affiliate-disclosure"
+            />
             <div className="container">
                 <div className="content-box">
                     <h1>Affiliate Disclosure</h1>

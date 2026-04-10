@@ -3,11 +3,24 @@ import DealCard from '../components/DealCard';
 import BlogCard from '../components/BlogCard';
 import { topDeals, blogPosts } from '../data/mockData';
 import { Link } from 'react-router-dom';
+import SEOHead from '../components/SEOHead';
 import './Home.css';
 
 const Home = () => {
     return (
         <div className="home">
+            <SEOHead
+                title="Norexa | Best Fashion Deals, Coupons & Promo Codes 2026"
+                description="Discover handpicked fashion deals, verified coupons, and massive savings across top stores like Myntra, Amazon, H&M, Ajio, and Flipkart."
+                canonicalPath="/"
+                jsonLd={{
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "name": "Norexa - Best Fashion Deals & Coupons",
+                    "description": "Discover handpicked fashion deals, verified coupons, and massive savings across top fashion stores.",
+                    "url": "https://norexa.online/"
+                }}
+            />
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="container hero-content">

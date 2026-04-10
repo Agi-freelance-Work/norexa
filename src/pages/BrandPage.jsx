@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import CouponCard from '../components/CouponCard';
 import { mockCoupons, brandLogos } from '../data/mockData';
+import SEOHead from '../components/SEOHead';
 import './BrandPage.css';
 
 const BrandPage = ({ fixedBrand }) => {
@@ -43,6 +44,11 @@ const BrandPage = ({ fixedBrand }) => {
 
     return (
         <div className="brand-page section">
+            <SEOHead
+                title={`${brandName} Coupons, Offers & Promo Codes | Norexa`}
+                description={`Get the latest verified ${brandName} coupons, promo codes, and exclusive deals. Save maximum on your fashion shopping today with Norexa.`}
+                canonicalPath={`/${fixedBrand || paramBrandId}`}
+            />
             <div className="container">
 
                 {/* GrabOn Style Header */}

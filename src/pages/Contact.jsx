@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MessageSquare, Mail, User, MapPin, HelpCircle, Send } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 import './Contact.css';
 
 const Contact = () => {
@@ -35,6 +36,11 @@ const Contact = () => {
 
   return (
     <div className="contact-page fade-in">
+      <SEOHead
+        title="Contact Us | Norexa"
+        description="Get in touch with the Norexa team. We are here to help you with feedback, business partnerships, or any questions you have."
+        canonicalPath="/contact"
+      />
       <div className="container">
         <div className="contact-grid">
           <div className="contact-sidebar">
